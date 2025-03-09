@@ -53,5 +53,3 @@ export default tseslint.config({
 })
 ```
 # weather-dashboard
-# weather-dashboard
-# weather-dashboard
