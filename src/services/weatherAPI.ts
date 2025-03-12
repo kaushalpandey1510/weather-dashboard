@@ -6,7 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 export const getWeather = async (city: string): Promise<WeatherData> => {
     try {
-        const response = await axios.get(`${API_URL}/weather?q=${city}$appid=${API_KEY}&units=metric`);
+        const response = await axios.get(`${API_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`);
         return response.data;
     } catch(error) {
         if(axios.isAxiosError(error)) {
